@@ -1,6 +1,8 @@
 from services.llm import get_llm
 import json
 
+from state import ReviewState
+
 SECURITY_PROMPT = """You are a security code reviewer specialising in OWASP Top 10.
 
 Analyse this {language} code for security vulnerabilities ONLY.
